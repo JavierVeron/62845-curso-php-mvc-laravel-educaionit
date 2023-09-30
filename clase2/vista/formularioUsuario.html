@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABM Usuarios - Educación IT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+	<div class="container my-5">
+		<div class="row">
+			<div class="col text-center">
+				<a href="index.php?usuarios" class="text-dark text-decoration-none">
+					<h1>ABM Usuarios</h1>
+				</a>
+			</div>
+		</div>
+		<div class="row my-5">
+			<div class="col-md-6 text-center">
+				<div class="input-group mb-3">
+					<input type="text" class="form-control" id="idUsuario" placeholder="Buscar un Usuario por Id">
+					<button class="btn btn-outline-secondary" type="button" id="btnBuscar">Buscar</button>
+				</div>
+			</div>
+			<div class="col-md-6 text-end">
+				<a href="index.php?formulariousuario" class="btn btn-light">Crear Usuario (+)</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<form method="post" action="index.php?crearusuario">
+					<div class="mb-3">
+					  <label for="nombre" class="form-label">Nombre</label>
+					  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese un Nombre">
+					</div>
+					<div class="mb-3">
+						<label for="apellido" class="form-label">Apellido</label>
+						<input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese un Apellido">
+					</div>
+					<div class="mb-3">
+						<label for="nombre" class="form-label">Email</label>
+						<input type="text" class="form-control" id="email" name="email" placeholder="Ingrese un Email">
+					</div>
+					<div class="mb-3">
+						<label for="nombre" class="form-label">Clave</label>
+						<input type="password" class="form-control" id="clave" name="clave" placeholder="Ingrese una Clave">
+					</div>
+					<button type="submit" class="btn btn-light" id="btnCrearUsuario">Crear Usuario</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="assets/js/usuario.funciones.js"></script>
+  </body>
+</html>

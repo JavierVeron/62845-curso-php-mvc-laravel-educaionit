@@ -1,0 +1,11 @@
+Practica 1:
+1.1
+pasar el archivo reporte.php a mcv
+1.2
+agregar un listado de categorias
+
+Practica 2:
+Mostrar implementacion de insert y delete sin mvc.
+Agregar en MVC
+1.1 agregar insert
+1.2 agregar delete
