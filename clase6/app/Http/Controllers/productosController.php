@@ -11,6 +11,10 @@ use Illuminate\Validation\ValidationException;
 
 class productosController extends Controller
 {
+    static public function prueba($id) {
+        return $id;
+    }
+    
     static public function agregar(Request $request) {
         try {
             $validacion = $request->validate([
