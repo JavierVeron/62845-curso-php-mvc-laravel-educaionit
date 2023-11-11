@@ -36,5 +36,4 @@ function eliminarProducto(id) {
             document.getElementById("resultadoEliminacion").innerHTML = `<div class="alert alert-danger" role="alert">${data.message}</div>`;
         }
     })
-
 }
